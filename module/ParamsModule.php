@@ -6,7 +6,7 @@ class ParamsModule extends \yii\base\Module
 {
     const MODULE = "params";
 
-    public $controllerNamespace = 'webstick\params\module\controllers';
+    public $controllerNamespace = 'pashkinz92\params\module\controllers';
 
     public function init()
     {
