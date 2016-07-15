@@ -1,0 +1,21 @@
+{
+    "name": "pashkinz92/yii2-params",
+    "description": "Work with params for Yii2",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pavel",
+            "email": "pasha92@ukr.net"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "webstick\\params\\": ""
+        }
+    }
+}
