@@ -1,6 +1,6 @@
 <?php
 
-namespace app\modules\params\controllers;
+namespace pashkinz92\params\module\controllers;
 
 use yii\web\Controller;
 

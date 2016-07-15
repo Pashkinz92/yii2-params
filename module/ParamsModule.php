@@ -1,6 +1,6 @@
 <?php
 
-namespace webstick\params\module;
+namespace pashkinz92\params\module;
 
 class ParamsModule extends \yii\base\Module
 {

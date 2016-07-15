@@ -1,6 +1,6 @@
 <?php
 
-namespace webstick\params;
+namespace pashkinz92\params;
 
 /**
  *
