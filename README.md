@@ -29,3 +29,5 @@ Once the extension is installed, simply use it in your code by  :
 
 ```php
 <?= \webstick\params\AutoloadExample::widget(); ?>```
+
+```yii migrate --migrationPath=@pashkinz92/params/migrations```
