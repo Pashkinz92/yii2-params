@@ -1,7 +1,6 @@
 <?php
 
 use yii\db\Migration;
-use yii\db\Schema;
 
 /**
  * Handles the creation for table `config`.
@@ -13,13 +12,16 @@ class m160715_125351_create_config_table extends Migration
      */
     public function up()
     {
-        $this->createTable('config', [
+        $tableOptions = 'CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE=InnoDB';
+
+
+        $this->createTable('{{%config}}', [
             'id' => $this->primaryKey(),
-            'title' => Schema::TYPE_STRING . '(255) NOT NULL',
-            'value' => Schema::TYPE_STRING . '(10000) NOT NULL',
-            'param_desc' => Schema::TYPE_STRING . '(10000) NOT NULL',
-            'valid' => Schema::TYPE_STRING . '(10000) NOT NULL',
-        ]);
+            'title' => $this->string(255)->notNull(),
+            'value' => $this->string(10000)->notNull(),
+            'param_desc' => $this->string(10000)->notNull(),
+            'valid' => $this->string(1000)->notNull(),
+        ], $tableOptions);
     }
 
     /**
