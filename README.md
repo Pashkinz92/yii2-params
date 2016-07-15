@@ -10,13 +10,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist pashkinz92/yii2-params "*"
+php composer.phar require --prefer-dist pashkinz92/yii2-params "dev-master"
 ```
 
 or add
 
 ```
-"pashkinz92/yii2-params": "*"
+"pashkinz92/yii2-params": "dev-master"
 ```
 
 to the require section of your `composer.json` file.
@@ -27,7 +27,12 @@ Usage
 
 Once the extension is installed, simply use it in your code by  :
 
-```php
-<?= \webstick\params\AutoloadExample::widget(); ?>```
+```
+$config['bootstrap'][] = 'params';
+$config['modules']['params'] = [
+    'class' => 'pashkinz92\params\module\ParamsModule',
+];
+```
 
 ```yii migrate --migrationPath=@pashkinz92/params/migrations```
+
