@@ -61,6 +61,8 @@ class DefaultController extends Controller
             $msg = \Yii::$app->epochtasms->sendSMS('test from admin', $value);
         }else if($valid == 'number'){
             $model->value = (string)(integer)$value;
+        }else {
+            $model->value = (string)$value;
         }
 
 

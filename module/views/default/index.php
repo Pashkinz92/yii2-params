@@ -6,6 +6,8 @@
 
     use kartik\date\DatePicker;
 
+    \pashkinz92\params\ParamsAsset::register($this);
+
     /* @var $this yii\web\View */
 
     $this->title = 'Параметры';
