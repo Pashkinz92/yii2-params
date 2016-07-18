@@ -7,6 +7,22 @@ use pashkinz92\params\models\Config;
 
 class DefaultController extends Controller
 {
+    public function behaviors()
+    {
+        return [
+            'access' => [
+                'class' => \yii\filters\AccessControl::className(),
+                'rules' => [
+                    [
+                        'allow' => true,
+                        'roles' => ['@'],
+                    ],
+                ],
+            ]
+        ];
+    }
+
+
     /**
      * Lists all Config models.
      * @return mixed

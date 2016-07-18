@@ -14,11 +14,15 @@ jQuery(function () {
             console.log(param);
             console.log(valid);*/
 
+            var p = {param:param, value: value, valid: valid};
+
+            p[ $('meta[name="csrf-param"]').attr('content') ] = $('meta[name="csrf-token"]').attr('content');
+
             $.ajax({
                 type: 'POST',
                 url: '/backend/web/params/default/update',
                 dataType: 'json',
-                data: {param:param, value: value, valid: valid},
+                data: p,
                 success: function(data)
                 {
                 },
