@@ -1,5 +1,5 @@
 jQuery(function () {
-    $('.params .form-control').on('click', function(){
+    $('.params .form-control').on('click focus', function(){
         $('.params .btn-success').addClass('hide');
         $(this).closest('.param_value').next().find('.btn-success').removeClass('hide');
     })
